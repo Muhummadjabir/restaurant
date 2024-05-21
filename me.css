@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*  navbar section start  */
+.navbar{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 4);
+    padding: 10px;
+}
+
+.navbar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+}
+
+.nav-link{
+    list-style: none;
+    margin-right: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+
+
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 17px;
+    color: #e82c2c;
+    z-index: 1;
+}
+
+.nav-item{
+    list-style: none;
+    z-index: 1;
+}
+
+.nav-link:hover{
+    color: #5b5451;
+}
+
+.navbar-toggle{
+    display: none;
+    font-size: 1.2em;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 1;
+
+}
+
+.show{
+    display: block !important;
+    z-index: 1;
+    font-size: 20px
+}
+
+@media (max-width: 768px) {
+
+    .navbar-toggle{
+        display: block;
+
+    }
+
+    .nav-link{
+        font-size: 13px;
+
+    }
+
+
+
+    .navbar-nav{
+        display: none;
+    }
+}
+
+
+/*  navbar section end  */
+
+
+
+.hero-section{
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.bh{
+    height: 90vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ExploreMoreBtn{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+.ExpMoreBtn{
+    background: #e82c2c;
+    color: white;
+    border: none;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.ExpMoreBtn:hover{
+    background: #0ac60a;
+}
+
+
+header {
+    background: url("wallpaperflare.com_wallpaper (22).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     /* Add position relative to the header */
+}
+    /* Add black overlay */
+   .bh::after{
+       content: "";
+       top: 0;
+       left: 0;
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       background: rgba(0, 0, 0, 0.2);
+   }
+
+   .row1{
+       padding:  10px;
+       display: grid;
+       grid-template-columns: 50% 49%;
+       height: 300px;
+   }
+
+   .col-item2{
+       background: url("wallpaperflare.com_wallpaper (26).jpg");
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+
+   }
+
+   @media (max-width: 768px) {
+       .row1{
+           grid-template-columns: 1fr;
+
+       }
+       .control1{
+           height: 100px;
+       }
+       .col-item2{
+           height: 200px;
+       }
+   }
+
+.row2{
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+footer {
+    background-color: black;
+    color: #fff;
+
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-info {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        margin-bottom: 20px;
+    }
+}
+.OrderBtn{
+    cursor: pointer;
+    background: #e82c2c;
+}
+
+.OrderBtn:hover{
+    background: #0ac60a;
+}
